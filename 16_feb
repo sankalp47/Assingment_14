@@ -1,0 +1,53 @@
+/***********Sum of Anti Diagonal **************/
+public class Anti_diagonal {
+    public static void main(String[] args) {
+        int[][] arr2 = {{1,5,7},{2,6,8},{5,8,2}};
+        int anti =0;
+        for (int i=0;i< arr2.length;i++){
+            for(int j=0;j<arr2.length;j++){
+                if(i + j == arr2.length - 1) {
+                    anti += arr2[i][j];
+                }
+            }
+
+        }
+        System.out.println(anti);
+    }
+}
+
+/**************Frequency of Odd And Even *******************/
+public class Even_Odd {
+    public static void main(String[] args) {
+        int[][] arr1 = {{1,3,5},{2,4,1},{7,8,9}};
+        int even =0;
+        int odd =0;
+        for (int i=0;i<arr1.length;i++){
+            for (int j=0;j<arr1.length;j++){
+                if(arr1[i][j]%2==0){
+                    even++;
+                }
+                else{
+                    odd++;
+                }
+            }
+        }
+        System.out.println("Even "+ even);
+        System.out.println("Odd "+ odd);
+    }
+}
+
+/*********************** String Matrix ************/
+public class string_array {
+    public static void main(String[] args) {
+        String[][] arr1 ={{"Hello","Geekster"},{"Good","Day"}};
+
+        for(int i=0;i<arr1.length;i++){
+            String str ="";
+            for (int j=0;j<arr1.length;j++){
+                str += arr1[i][j];
+
+            }
+            System.out.println("Row "+i+" "+str);
+        }
+    }
+}
